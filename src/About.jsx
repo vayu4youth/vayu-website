@@ -83,7 +83,7 @@ export default function About() {
             </p>
             <p>
               Our goal is for VAYU to grow not only as an organization, but also as a community of like minded individuals 
-              working collectively for the greater good of the world. When the youth understand the need for change today, 
+              working collectively for the greater good of the world. If the youth understand the need for change today, 
               the day is not far when the world as a whole will walk this noble path.
             </p>
             <p className="pt-4 text-[#D7572A] font-['Source_Sans_3']">
