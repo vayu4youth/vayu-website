@@ -1,16 +1,56 @@
-# React + Vite
+# VAYU - Vedic Association for Youth Unity ॐ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The official website for VAYU, a non-profit organization dedicated to connecting youth with Vedic heritage through modern technology and community service.
 
-Currently, two official plugins are available:
+**Live Site:** [https://vayuinternational.org](https://vayuinternational.org)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+* **Framework:** [React](https://reactjs.org/) (via [Vite](https://vitejs.dev/))
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Animations:** [Framer Motion](https://www.framer.com/motion/)
+* **Icons:** [Lucide React](https://lucide.dev/)
+* **Deployment:** [Vercel](https://vercel.com/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
 
-## Expanding the ESLint configuration
+* **Responsive Design:** Fully mobile-optimized navigation and layouts.
+* **Dynamic Animations:** Smooth entry animations and hover effects using Framer Motion.
+* **Component-Based Architecture:** Modular design for the Team, Events, and Hero sections.
+* **Performance:** Optimized assets and fast load times via Vite build pipeline.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+Follow these steps to run the project locally on your machine.
+
+### Prerequisites
+
+* Node.js (v16 or higher)
+* npm or yarn
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/vayu4youth/vayu-website.git](https://github.com/vayu4youth/vayu-website.git)
+    cd vayu-website
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser**
+    Visit `http://localhost:5173` to view the app.
+
+## Project Structure
+
+```text
+/public          # Static assets (Favicons, Logos, Robots.txt)
+/src
