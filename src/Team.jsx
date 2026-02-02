@@ -8,7 +8,7 @@ const teamMembers = [
     role: "Operations Coordinator",
     bio: "Karanveer Arora, a young junior in high school and a 4th generation Arya samaj who is very much interested in field of philosophy, history, and science. He is also very much into wrestling. He wants to bring major social reforms in his lifetime, and is also very eager to spread the word of Indian history and Vedic culture.",
     image: "/team/Karanveer.png",
-    email: "Karora0312@gmail.com",
+    email: "karora0312@gmail.com",
   },
   {
     name: "Asmie Mann",
@@ -31,6 +31,7 @@ const teamMembers = [
     role: "Youth Representative",
     bio: "Sudeep, a graduate in Aviation Science and Management pursuing a Master’s in Aerospace Science, volunteers with the Greater Atlanta Vedic Temple supporting youth activities and events. He is committed to community service and staying connected to Vedic cultural roots while contributing to spiritual and educational spaces.",
     image: "/team/Sudeep.jpeg",
+    email: "sudeepgiri369@gmail.com",
     linkedin: "https://www.linkedin.com/in/sg2927/",
   },
   {
@@ -38,6 +39,7 @@ const teamMembers = [
     role: "Compliance Team",
     bio: "Havishkrit, a lifelong Arya Samaji and youth volunteer at the Greater Atlanta Vedic Temple, is passionate about sharing Vedic knowledge with younger generations in modern yet authentic ways. He holds a bachelor’s in philosophy and is currently in law school at the University of Georgia.",
     image: "/team/Havishkrit.jpeg",
+    email: "havishkrit@gmail.com",
     linkedin: "https://www.linkedin.com/in/havishkrit-arya/",
   },
   {
@@ -45,6 +47,7 @@ const teamMembers = [
     role: "Compliance Coordinator",
     bio: "Born in Queens, NY, Niraj began his Dharmic education at age 4, studying Hindi, moral education, and music, and attending Arya Vir Dal Shikshan Shivir camps. After earning a Biochemistry degree, he worked in ALS research at Columbia University and now in Clinical Laboratory Science. He is passionate about Vedic governance, ethics, and history through texts like the Ramayan and Mahabharata.",
     image: "/team/Niraj.jpeg",
+    email: "ramsamoojnk@gmail.com",
     linkedin: "https://www.linkedin.com/in/niraj-ramsamooj-766b7a188/",
 
   },
@@ -53,6 +56,7 @@ const teamMembers = [
     role: "Research Team",
     bio: "Arushi, a computer science and finance graduate working in technology, is passionate about Ayurveda, Yoga, and Vedic history. A 6th-generation Arya Samaji, she teaches Yoga, meditation, and pranayama, sharing Vedic philosophy with others.",
     image: "/team/Arushi.jpeg",
+    email: "garg.arushi0@gmail.com",
     linkedin: "https://www.linkedin.com/in/gargarushi",
   },
 ];
