@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { User, Linkedin, Mail } from "lucide-react";
-
 const teamMembers = [
   {
     name: "Karanveer Arora",
@@ -12,7 +11,7 @@ const teamMembers = [
   },
   {
     name: "Asmie Mann",
-    role: "Social Media Coordinatior",
+    role: "Social Media Coordinator",
     bio: "Asmie, a 3rd-year college student from Washington, is a devoted Arya Samaji guided by the Vedic principles of truth, knowledge, and service. She stays connected to her roots while finding ways to give back to her community. Outside school, she enjoys helping others and working with children.",
     image: "/team/Asmie.jpeg",
     email: "mann.asmie@gmail.com",

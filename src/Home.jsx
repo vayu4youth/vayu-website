@@ -60,7 +60,7 @@ export default function Home() {
             className="mt-12 flex justify-center gap-6 text-[#C42727]"
           >
             <a
-              href="https://www.instagram.com/vayu_international/" 
+              href="https://www.instagram.com/vayu4youth/" 
               target="_blank" 
               rel="noopener noreferrer"
             >
