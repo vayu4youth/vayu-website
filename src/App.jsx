@@ -5,6 +5,7 @@ import Home from "./Home";
 import About from "./About";
 import Team from "./Team";
 import Events from "./Events";
+import FirstVayuSummit from "./FirstVayuSummit";
 import UserNotRegisteredError from "./UserNotRegisteredError";
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/FirstVayuSummit" element={<FirstVayuSummit />} />
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
           <Route path="/events" element={<Events />} />

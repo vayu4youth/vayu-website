@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { createPageUrl } from "./utils";
 // I added 'Calendar' to this list below:
-import { Users, BookOpen, Home, Calendar } from "lucide-react";
+import { Users, BookOpen, Home, Calendar, Ticket } from "lucide-react";
 
 export default function Layout({ children, currentPageName }) {
   const location = useLocation();
@@ -13,6 +13,7 @@ export default function Layout({ children, currentPageName }) {
 
   const navItems = [
     { name: "Home", path: createPageUrl("Home"), icon: Home },
+    { name: "FIRST VAYU SUMMIT!", path: "/FirstVayuSummit", icon: Ticket }, // Temporary icon for Summit
     { name: "About", path: createPageUrl("About"), icon: BookOpen },
     { name: "Team", path: createPageUrl("Team"), icon: Users },
     { name: "Events", path: createPageUrl("Events"), icon: Calendar },

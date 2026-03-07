@@ -7,6 +7,18 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div className="w-full bg-white">
+      {/* 1st Summit Event Ribbon */}
+      <motion.div 
+        initial={{ y: -50 }}
+        animate={{ y: 0 }}
+        className="w-full bg-[#D7572A] text-white py-2 px-4 text-center text-sm md:text-base font-['Playfair_Display'] flex items-center justify-center gap-3"
+      >
+        <span>JOIN US FOR THE FIRST VAYU SUMMIT!</span>
+        <Link to="/FirstVayuSummit" className="underline font-bold hover:text-orange-200 transition-colors">
+          Register Now
+        </Link>
+      </motion.div>
+
       {/* Hero Section */}
       <section className="px-6 py-20 md:py-32 bg-gradient-to-br from-[#EFA92A] to-orange-50">
         <div className="max-w-6xl mx-auto text-center">
