@@ -10,8 +10,9 @@ export default function EventPage() {
 
   const eventDetails = {
     title: "THE FIRST VAYU SUMMIT!",
+    subtitle: "Hosted in collaboration with Arya Samaj of New Jersey.",
     description:
-      "JOIN US for a transformative full-day conference inspired by the teachings of Swami Dayananda Saraswati and the timeless principles of Arya Samaj. Experience uplifting Havan and engaging, interactive sessions that explore Vedic wisdom in a impactful way for today’s world.",
+      "Join us for a transformative full-day conference inspired by the teachings of Swami Dayananda Saraswati and the timeless principles of Arya Samaj. Experience uplifting Havan and engaging, interactive sessions that explore Vedic wisdom in an impactful way for today’s world.",
     date: "Saturday, April 18th, 2026",
     time: "10:00 AM - 5:00 PM EST",
     location:
@@ -39,12 +40,23 @@ export default function EventPage() {
             {eventDetails.title}
           </motion.h1>
 
+          {/* Subtitle */}
+          <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-2xl md:text-3xl font-light mb-6 text-[#D75728] font-['Playfair_Display'] leading-relaxed max-w-3xl mx-auto"
+              style={{ textShadow: "0 2px 10px rgba(234, 88, 12, 0.1)" }}
+          >
+            {eventDetails.subtitle}
+          </motion.p>
+
           {/* Description */}
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg md:text-xl font-light mb-12 text-[#C42727] font-['Playfair_Display'] leading-relaxed max-w-2xl mx-auto"
+            className="text-lg md:text-xl font-light mb-12 text-[#C42727] font-['Playfair_Display'] leading-relaxed max-w-3xl mx-auto"
           >
             {eventDetails.description}
           </motion.p>
@@ -54,44 +66,36 @@ export default function EventPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
+            className="flex flex-col sm:flex-row justify-center items-stretch gap-6 mb-12 w-full"
           >
-            {/* Date Card */}
-            <div className="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-[#F09304]/30 shadow-sm flex flex-col items-center hover:bg-white/70 transition-colors">
-              <Calendar className="w-8 h-8 text-[#D7572A] mb-3" />
-              <h3 className="font-bold text-[#790016] mb-1 font-['Playfair_Display']">
-                Date
-              </h3>
-              <p className="text-[#C42727]">{eventDetails.date}</p>
-            </div>
+            {/* Date and Time Card */}
+              <div className="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-[#F09304]/30 shadow-sm flex flex-col items-center hover:bg-white/70 transition-colors w-full sm:w-80">
+                <Calendar className="w-8 h-8 text-[#D7572A] mb-3" />
+                <h3 className="font-bold text-[#790016] mb-1 font-['Playfair_Display']">
+                  Date and Time
+                </h3>
+                <p className="text-[#C42727]">{eventDetails.date}</p>
+                <p className="text-[#C42727]">{eventDetails.time}</p>
+              </div>
 
-            {/* Time Card */}
-            <div className="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-[#F09304]/30 shadow-sm flex flex-col items-center hover:bg-white/70 transition-colors">
-              <Clock className="w-8 h-8 text-[#D7572A] mb-3" />
-              <h3 className="font-bold text-[#790016] mb-1 font-['Playfair_Display']">
-                Time
-              </h3>
-              <p className="text-[#C42727]">{eventDetails.time}</p>
-            </div>
-
-            {/* Location Card */}
-            <a
-              href={eventDetails.mapLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-[#F09304]/30 shadow-sm flex flex-col items-center hover:bg-white/70 transition-all group"
-            >
-              <MapPin className="w-8 h-8 text-[#D7572A] mb-3 group-hover:scale-110 transition-transform" />
-              <h3 className="font-bold text-[#790016] mb-1 font-['Playfair_Display']">
-                Location
-              </h3>
-              <p className="text-[#C42727] whitespace-pre-line text-center group-hover:text-[#790016]">
-                {eventDetails.location}
-              </p>
-              <span className="text-xs mt-2 text-[#D7572A] opacity-70 italic">
-                Click for Directions
-              </span>
-            </a>
+              {/* Location Card */}
+              <a
+                href={eventDetails.mapLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-[#F09304]/30 shadow-sm flex flex-col items-center hover:bg-white/70 transition-all group"
+              >
+                <MapPin className="w-8 h-8 text-[#D7572A] mb-3 group-hover:scale-110 transition-transform" />
+                <h3 className="font-bold text-[#790016] mb-1 font-['Playfair_Display']">
+                  Location
+                </h3>
+                <p className="text-[#C42727] whitespace-pre-line text-center group-hover:text-[#790016]">
+                  {eventDetails.location}
+                </p>
+                <span className="text-xs mt-2 text-[#D7572A] opacity-70 italic">
+                  Click for Directions
+                </span>
+              </a>
           </motion.div>
 
           {/* Conditional CTA */}
@@ -119,7 +123,7 @@ export default function EventPage() {
                   href={eventDetails.volunteerLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-10 py-4 bg-[#D7572A] text-white rounded-full font-['Playfair_Display'] text-lg hover:bg-[#DE6A10] transition-all shadow-md hover:shadow-lg flex items-center gap-3 transform hover:-translate-y-1"
+                  className="px-10 py-4 bg-transparent border-2 border-[#D7572A] text-[#D7572A] rounded-full font-['Playfair_Display'] text-lg hover:bg-[#D7572A] hover:text-white transition-all shadow-md hover:shadow-lg flex items-center gap-3 transform hover:-translate-y-1"
                 >
                   <UserPlus className="w-5 h-5" />
                   Want to Volunteer?
