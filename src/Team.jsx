@@ -83,7 +83,7 @@ const teamSections = [
     members: [
       {
         name: "Arushi Garg",
-        role: "Research Team",
+        role: "Research Coordinator",
         bio: "Arushi, a computer science and finance graduate working in technology, is passionate about Ayurveda, Yoga, and Vedic history. A 6th-generation Arya Samaji, she teaches Yoga, meditation, and pranayama, sharing Vedic philosophy with others.",
         image: "/team/Arushi.jpeg",
         email: "garg.arushi0@gmail.com",
