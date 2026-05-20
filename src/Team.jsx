@@ -61,10 +61,10 @@ const teamSections = [
         linkedin: "https://www.linkedin.com/in/asmiemann/",
       },
       {
-        name: "Krish Senthilkumar",
+        name: "Khrish Senthilkumar",
         role: "Outreach Coordinator",
         bio: "Khrish is a dedicated student volunteer driven by a strong commitment to seva and community engagement. He focuses his efforts on organizational outreach, sharing educational resources, and raising awareness about Vedic knowledge.",
-        image: "/team/Krish.jpeg",
+        image: "/team/Khrish.jpeg",
         email: "calmekhrish@gmail.com",
       },
       {
