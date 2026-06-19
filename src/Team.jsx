@@ -12,7 +12,7 @@ const teamSections = [
         role: "Operations Coordinator",
         bio: "Karanveer is a dedicated student of philosophy, history, and science, with a deep-rooted passion for Vedic culture and history. As a 4th generation Arya Samaji, he is focused on community growth and driving meaningful social impact through his leadership and organizational efforts.",
         image: "/team/Karanveer.png",
-        email: "karora0312@gmail.com",
+        email: "Karanveer.talks@gmail.com",
       },
       {
         name: "Niraj Ramsamooj",
